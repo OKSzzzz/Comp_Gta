@@ -11,13 +11,13 @@ public class Personaja {
  System.out.println(nom + " tiene " + dinero + "$.");
  }
  public static void main(String[] args) {
- Personaja jugador = new Personaja("Trevor", 500);
- jugador.mostrarInfo();
- jugador.ganarDinero(null);
+ Personaja jugador = new Personaja("Franklin", 500);
+jugador.mostrarInfo();
+jugador.ganarDinero(null);
  }
 
  public void ganarDinero (String nom){
-    nom = "Trevor";
+    nom = "Franklin";
     Scanner ganardinero = new Scanner(System.in);
     System.out.println("Dime cuantas misiones has completado hoy");
     int pregunta = ganardinero.nextInt();
@@ -33,4 +33,14 @@ public class Personaja {
     }
  }
 }
+//¿Qué comando se usa para cambiar de rama? El comando branch
+
+// ¿A que sirve de hacer la nueva funcionalidad en una nueva rama antes de fusionar? 
+//Para no modificar ninguna rama importante como el main sin tener idea de si funciona nuestro apartado o no.
+
+//¿Qué comando se usa para fusionar dos ramas?
+//Usamos el comando merge dentro de la rama y despues ponemos el nombre de la rama que queremos traer
+
+//¿Por qué podemos eliminar la rama después de la fusión?
+//Porque ya no nos hace falta debido a que tenemos todo en el main
 
